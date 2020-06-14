@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel='stylesheet' id='wp-block-library-css' href='%PUBLIC_URL%/wp-includes/css/dist/block-library/style.min5560.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='contact-form-7-css'
+    href='%PUBLIC_URL%/wp-content/plugins/contact-form-7/includes/css/styles3c21.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='siteorigin-panels-front-css'
+    href='%PUBLIC_URL%/wp-content/plugins/siteorigin-panels/css/front-flex.minc867.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-layout-css'
+    href='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/css/woocommerce-layout1aae.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-smallscreen-css'
+    href='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen1aae.css' type='text/css'
+    media='only screen and (max-width: 768px)' />
+  <link rel='stylesheet' id='woocommerce-general-css'
+    href='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/css/woocommerce1aae.css' type='text/css' media='all' />
+  <style id='woocommerce-inline-inline-css' type='text/css'>
+    .woocommerce form .form-row .required {
+      visibility: visible;
+    }
+  </style>
+  <link rel='stylesheet' id='bootstrap-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/bootstrap.min.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/font-awesome.min51a2.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap-offcanvas-css'
+    href='%PUBLIC_URL%/wp-content/themes/mina/css/bootstrap.offcanvas.min51a2.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap-responsive-css'
+    href='%PUBLIC_URL%/wp-content/themes/mina/css/bootstrap-responsive-tabs51a2.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap-select-css'
+    href='%PUBLIC_URL%/wp-content/themes/mina/css/bootstrap-select.min51a2.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='featherlight-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/featherlight.min51a2.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='hover-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/hover.min51a2.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='owl-carousel-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/owl.carousel.min51a2.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='mina-fonts-css'
+    href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C200%2C300%2C400%2C700&amp;subset=latin%2Clatin-ext'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='superfish-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/superfish51a2.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='kenzap-core-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/core51a2.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='mina-style-css' href='%PUBLIC_URL%/wp-content/themes/mina/style51a2.css' type='text/css'
+    media='all' />
+  <style id='mina-style-inline-css' type='text/css'>
+    .site-header-2 {
+      background: #1a1a38;
+    }
+
+    .booking-confirmation .section-content h1 {
+      color: #1a1a38;
+    }
+    
+
+    .booking-confirmation .section-content h1 span {
+      color: #1a1a38;
+    }
+
+    .footer-copyright p {
+      color: #1a1a38;
+    }
+
+    .woocommerce-ResetPassword input[type="submit"],
+    .woocomerce-form input[type="submit"],
+    .checkout_coupon input[type="submit"],
+    .woocommerce button.button.alt,
+    .woocommerce input.button.alt {
+      color: #1a1a38;
+      border: 1px solid #1a1a38;
+    }
+
+    .woocommerce-ResetPassword input[type="submit"]:hover,
+    .woocomerce-form input[type="submit"]:hover,
+    .checkout_coupon input[type="submit"]:hover,
+    .woocommerce button.button.alt:hover,
+    .woocommerce input.button.alt:hover {
+      background: #1a1a38;
+    }
+
+    .woocommerce-info {
+      border-top-color: #1a1a38;
+    }
+
+    .woocommerce-info:before {
+      color: #1a1a38;
+    }
+
+    .shop_table .product-price .woocommerce-Price-amount {
+      color: #1a1a38;
+    }
+
+    input.txtacrescimo {
+      color: #1a1a38;
+    }
+
+    .shop_table .coupon .button,
+    .shop_table .actions .button,
+    .shop_table .shipping-calculator-form .button {
+      border: 1px solid #1a1a38;
+      color: #1a1a38;
+    }
+
+    .woocommerce-cart .wc-proceed-to-checkout a.button.alt {
+      background: #1a1a38;
+    }
+
+    .shop_table .coupon .button:hover,
+    .shop_table .actions .button:hover {
+      background: #1a1a38;
+    }
+
+    .woocommerce button.button.alt,
+    .woocommerce input.button.alt {
+      color: #1a1a38;
+      border: 1px solid #1a1a38;
+    }
+
+    .woocommerce ul.products li.product a.button {
+      color: #1a1a38;
+      border: 1px solid #1a1a38;
+    }
+
+    .woocommerce ul.products li.product a.button:hover {
+      background: #1a1a38;
+    }
+
+    .comments a:hover,
+    .pagination-wrapper ul li span,
+    .pagination-wrapper ul li span:hover,
+    .pagination-wrapper ul li a,
+    .pagination-wrapper ul li a:hover,
+    .blog-post a:hover,
+    .blog-stats a:hover,
+    table a:hover,
+    .sidebar ul li a:hover,
+    .woocommerce ul.products li.product span.woocommerce-Price-amount,
+    .product-single .woocommerce-Price-amount {
+      color: #1a1a38;
+    }
+
+    .woocommerce .product-category .woocommerce-ordering select.orderby {
+      color: #1a1a38;
+      border-color: #1a1a38;
+    }
+
+    .woocommerce .woo-pagination ul li a:hover,
+    .woocommerce .woo-pagination ul li.active a,
+    .woocommerce .woo-pagination ul li span.current {
+      color: #1a1a38;
+      border-color: #1a1a38;
+    }
+
+    .sticky .blog-post .area-content h2,
+    blockquote {
+      border-color: #1a1a38;
+    }
+
+    #site-navigation-mobile .nav>li:hover>a,
+    #site-navigation .nav>li:hover>a {
+      color: #dcab28;
+    }
+    
+
+    #site-navigation-mobile .nav li a.cart-link span,
+    #site-navigation .nav li a.cart-link span {
+      color: #fff;
+      background: none;
+      background: #dcab28;
+      border-radius: 50%;
+    }
+
+    #site-navigation-mobile .cart-preview .cart-package-info li:last-child strong,
+    #site-navigation .cart-preview .cart-package-info li:last-child strong {
+      color: #dcab28;
+    }
+
+    #site-navigation-mobile .cart-preview .cart-view,
+    #site-navigation .cart-preview .cart-view {
+      border: 2px solid #dcab28;
+      background: #fff;
+      color: #dcab28;
+    }
+
+    #site-navigation-mobile .cart-preview .cart-view:hover,
+    #site-navigation .cart-preview .cart-view:hover {
+      background: #dcab28;
+      color: #fff;
+    }
+
+    #site-navigation-mobile .cart-preview .cart-checkout,
+    #site-navigation .cart-preview .cart-checkout {
+      border: 2px solid #dcab28;
+      background: #dcab28;
+      color: #fff;
+      -webkit-box-shadow: 0px 10px 20px 5px rgba(216, 166, 42, 0.3);
+      -moz-box-shadow: 0px 10px 20px 5px rgba(216, 166, 42, 0.3);
+      box-shadow: 0px 10px 20px 5px rgba(216, 166, 42, 0.3);
+    }
+
+    #site-navigation-mobile .cart-preview .cart-checkout:hover,
+    #site-navigation .cart-preview .cart-checkout:hover {
+      border: 2px solid #dcab28;
+      background: #fff;
+      color: #dcab28;
+    }
+
+    #main-slider .carousel-caption-content h2 strong {
+      color: #dcab28;
+    }
+
+    #main-slider .carousel-caption-content a:hover {
+      border: 3px solid #dcab28;
+      background: #dcab28;
+      color: #fff;
+    }
+
+    #main-slider .carousel-indicators li:hover,
+    #main-slider .carousel-indicators li.active {
+      border-radius: 0;
+      border: 2px solid #dcab28;
+      background: #dcab28;
+    }
+
+    .our-treatment .tab-content .accordion-link.active,
+    .our-treatment .nav-tabs li:hover a,
+    .our-treatment .nav-tabs li.active a {
+      background-color: #dcab28;
+      color: #fff
+    }
+
+    .primary-button {
+      color: #dcab28;
+      border: 2px solid #dcab28
+    }
+
+    .primary-button:hover {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .package .package-box:hover,
+    .package .package-box.active {
+      border: 1px solid #dcab28;
+    }
+
+    .package .package-box .ribbon {
+      background: #dcab28;
+      color: #fff;
+    }
+
+    .package .package-box .price {
+      color: #dcab28;
+    }
+
+    .package .package-box ul li .fa-check {
+      color: #dcab28
+    }
+
+    .package .package-box .select-package {
+      color: #dcab28;
+      border: 1px solid #dcab28;
+    }
+
+    .package .package-box:hover .select-package,
+    .package .package-box.active .select-package {
+      color: #fff;
+      background: #dcab28;
+    }
+
+    .our-makeup-artists .artist-box-info .fa-linkedin-square::before {
+      color: #dcab28
+    }
+
+    .stats img {
+      border-bottom: 2px solid #dcab28;
+    }
+
+    .stats .stats-count h3 {
+      color: #dcab28;
+    }
+
+    .stats .stats-count h3 .home-stats {
+      color: #dcab28;
+    }
+
+    .testimonials #testimonial-slider .carousel-indicators li.active {
+      background: #dcab28
+    }
+
+    .instagram-carousel .previous i,
+    .instagram-carousel .next i {
+      color: #dcab28;
+    }
+
+    .instagram-info {
+      background: #dcab28;
+    }
+
+    .latest-news .news-box .news-box-content h3 a:hover {
+      color: #dcab28
+    }
+
+    .latest-news .news-box .news-box-link a {
+      background: #dcab28;
+      color: #fff;
+    }
+
+    .latest-news .news-pagination ul li a {
+      color: #dcab28;
+      background: #fff;
+      border-radius: 5px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    .latest-news .news-pagination ul li.active a,
+    .latest-news .news-pagination ul li:hover a {
+      border: 3px solid #dcab28;
+    }
+
+    .services-detail-tab .nav-tabs>li:hover>a,
+    .services-detail-tab .nav-tabs>li.active>a {
+      border: 3px solid #dcab28
+    }
+
+    .normal-gallery .services-gallery a:before,
+    .services-detail-tab-content .services-gallery a:before {
+      background: rgba(26, 26, 56, 0.8);
+      outline: 5px solid #dcab28;
+      outline-offset: -5px;
+    }
+
+    .featherlight .featherlight-content {
+      background: #dcab28;
+      border-bottom: 5px solid transparent;
+    }
+
+    .featherlight .featherlight-close-icon {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .load-more {
+      color: #dcab28;
+      border: 2px solid #dcab28;
+    }
+
+    .load-more:hover {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .rating>span.star:before {
+      color: #dcab28;
+    }
+
+    .rating span.star.active:before {
+      color: #dcab28;
+    }
+
+    .services-review .review-form input[type="submit"] {
+      color: #dcab28;
+      border: 2px solid #dcab28;
+      background: #fff;
+    }
+
+    .services-review .review-form input[type="submit"]:hover {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .faq .panel-heading {
+      border: 3px solid #dcab28;
+      border-radius: 0;
+    }
+
+    .calendar .calendar-footer ul li button:hover,
+    .calendar .calendar-body ul li button:hover {
+      border: 3px solid #dcab28;
+      color: #dcab28
+    }
+
+    .calendar .calendar-footer ul li button.time-selected:hover,
+    .calendar .calendar-body ul li button.selected:hover {
+      border: 3px solid #dcab28;
+      color: #fff
+    }
+
+    .calendar .calendar-footer ul li .time-selected,
+    .calendar .calendar-body ul li .selected {
+      background: #dcab28;
+      color: #fff;
+      border: 3px solid #dcab28
+    }
+
+    .calendar .calendar-label ul li.selected span {
+      border: 3px solid #dcab28;
+      background: #dcab28;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .booking-form .booking-info h3 strong {
+      color: #dcab28;
+    }
+
+    .booking-form .booking-info ul li i {
+      color: #dcab28;
+    }
+
+    .booking-btn {
+      border: 3px solid #dcab28;
+      background: #fff;
+      color: #dcab28;
+    }
+
+    .booking-btn:hover {
+      background: #dcab28;
+      color: #fff;
+    }
+
+    .booking-cart .my-active-booking .booking-price strong {
+      color: #dcab28;
+    }
+
+    .booking-cart .my-booking-history .booking-price strong {
+      color: #dcab28;
+    }
+
+    .signin-form .section-content input[type="submit"],
+    .signup-form .section-content input[type="submit"] {
+      color: #dcab28;
+      border: 2px solid #dcab28;
+      background: #fff;
+    }
+
+    .signin-form .section-content input[type="submit"]:hover,
+    .signup-form .section-content input[type="submit"]:hover {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .um-faicon-caret-up {
+      color: #dcab28 !important;
+    }
+
+    .um-field-error,
+    p.um-notice.err {
+      background: #dcab28 !important;
+    }
+
+    .customer-counter h3 {
+      color: #dcab28;
+    }
+
+    .customer-counter h3 strong {
+      color: #dcab28;
+    }
+
+    .cta-contact {
+      background: #dcab28;
+    }
+
+    .cta-contact a:hover {
+      background: #fff;
+      color: #dcab28
+    }
+
+    .contact-us .contact-form input[type="submit"] {
+      color: #dcab28;
+      border: 2px solid #dcab28;
+      background: #fff;
+    }
+
+    .contact-us .contact-form input[type="submit"]:hover {
+      background: #dcab28;
+      color: #fff
+    }
+
+    .news-single .section-header ul li a {
+      color: #dcab28;
+    }
+
+    .news-single .section-content blockquote {
+      background: url(images/quote-bg.html) no-repeat center top;
+      border: none;
+      color: #dcab28
+    }
+
+    .footer-info ul li a:hover {
+      color: #dcab28;
+    }
+
+    .footer-links .social i {
+      color: #dcab28;
+    }
+
+    .our-makeup-artists .artist-box:hover {
+      -webkit-box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+      -moz-box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+      box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+    }
+    
+
+    .our-makeup-artists .artist-box:hover .artist-box-info {
+      -webkit-box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+      -moz-box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+      box-shadow: 0px 0px 25px 2px rgba(220, 171, 40, 0.67);
+    }
+
+    .our-makeup-artists .artist-box:hover>a:before {
+      background: rgba(220, 171, 40, 0.5);
+    }
+    
+
+    .logo-block img {
+      width: 161px;
+      height: auto;
+    }
+
+    .footer-logo img {
+      width: 131px;
+      height: auto;
+    }
+
+    @media (max-width:767px) {
+      .logo-block img {
+        width: 120px;
+        height: auto;
+      }
+    }
+  </style>
+  <link rel='stylesheet' id='mina-style-responsive-css' href='%PUBLIC_URL%/wp-content/themes/mina/css/responsive51a2.css'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='um_fonticons_ii-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-fonticons-ii2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_fonticons_fa-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-fonticons-fa2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='select2-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/select2/select2.min2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_crop-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-crop2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_modal-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-modal2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_styles-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-styles2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_members-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-members2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_profile-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-profile2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_account-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-account2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_misc-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-misc2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_fileupload-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-fileupload2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_datetime-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/pickadate/default2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_datetime_date-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/pickadate/default.date2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_datetime_time-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/pickadate/default.time2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_raty-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-raty2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_scrollbar-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-scrollbar2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_tipsy-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-tipsy2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_responsive-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-responsive2f20.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='um_default_css-css'
+    href='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/css/um-old-default2f20.css' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='um_old_css-css' href='%PUBLIC_URL%/wp-content/uploads/ultimatemember/um_old_settings5560.css'
+    type='text/css' media='all' />
+  <script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/jquery/jqueryb8ff.js'></script>
+  <script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/jquery/jquery-migrate.min330a.js'></script>
+  <script type='text/javascript'
+    src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-gdpr.min2f20.js'></script>
+  <link rel='https://api.w.org/' href='wp-json/index.html' />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.4" />
+<meta name="generator" content="WooCommerce 3.5.3" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed3532.json?url=http%3A%2F%2Fmina.kenzap.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed644a?url=http%3A%2F%2Fmina.kenzap.com%2F&amp;format=xml" />
+		<style type="text/css">
+			.request_name {
+				display: none !important;
+			}
+		</style>
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-head">/* Layout 2446 */ 
+                        #pgc-2446-0-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-2446 #panel-2446-0-0-0 , #pl-2446 #panel-2446-0-0-1 , #pl-2446 #panel-2446-0-0-2 , #pl-2446 #panel-2446-0-0-3 , #pl-2446 #panel-2446-0-0-4 , #pl-2446 #panel-2446-0-0-5 , #pl-2446 #panel-2446-0-0-6 , #pl-2446 #panel-2446-0-0-7 , #pl-2446 #panel-2446-0-0-8 , #pl-2446 #panel-2446-0-0-9 , #pl-2446 #panel-2446-0-0-10 {  } #pl-2446 .so-panel , #pl-2446 .so-panel:last-child { margin-bottom:0px } @media (max-width:780px){ #pg-2446-0.panel-no-style, #pg-2446-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-2446-0 .panel-grid-cell { margin-right:0 } #pg-2446-0 .panel-grid-cell { width:100% } #pl-2446 .panel-grid-cell { padding:0 } #pl-2446 .panel-grid .panel-grid-cell-empty { display:none } #pl-2446 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } 
+                        #pgc-2371-0-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-2371 #panel-2371-0-0-0 , #pl-2371 #panel-2371-0-0-1 , #pl-2371 #panel-2371-0-0-2 , #pl-2371 #panel-2371-0-0-3 , #pl-2371 #panel-2371-0-0-4 {  } #pg-2371-0 , #pl-2371 .so-panel , #pl-2371 .so-panel:last-child { margin-bottom:0px } @media (max-width:780px){ #pg-2371-0.panel-no-style, #pg-2371-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-2371-0 .panel-grid-cell { margin-right:0 } #pg-2371-0 .panel-grid-cell { width:100% } #pl-2371 .panel-grid-cell { padding:0 } #pl-2371 .panel-grid .panel-grid-cell-empty { display:none } #pl-2371 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  }
+                        #pgc-2441-0-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-2441 #panel-2441-0-0-0 {  } #pl-2441 .so-panel , #pl-2441 .so-panel:last-child { margin-bottom:0px } @media (max-width:780px){ #pg-2441-0.panel-no-style, #pg-2441-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-2441-0 .panel-grid-cell { margin-right:0 } #pg-2441-0 .panel-grid-cell { width:100% } #pl-2441 .panel-grid-cell { padding:0 } #pl-2441 .panel-grid .panel-grid-cell-empty { display:none } #pl-2441 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  }
+                        #pgc-2607-0-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-2607 #panel-2607-0-0-0 {  } #pl-2607 .so-panel , #pl-2607 .so-panel:last-child { margin-bottom:0px } @media (max-width:780px){ #pg-2607-0.panel-no-style, #pg-2607-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-2607-0 .panel-grid-cell { margin-right:0 } #pg-2607-0 .panel-grid-cell { width:100% } #pl-2607 .panel-grid-cell { padding:0 } #pl-2607 .panel-grid .panel-grid-cell-empty { display:none } #pl-2607 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  }
+                        #pgc-3358-0-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-3358 #panel-3358-0-0-0 {  } #pl-3358 .so-panel , #pl-3358 .so-panel:last-child { margin-bottom:0px } @media (max-width:780px){ #pg-3358-0.panel-no-style, #pg-3358-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-3358-0 .panel-grid-cell { margin-right:0 } #pg-3358-0 .panel-grid-cell { width:100% } #pl-3358 .panel-grid-cell { padding:0 } #pl-3358 .panel-grid .panel-grid-cell-empty { display:none } #pl-3358 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  }
+                    </style>
+                       
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body class="home page-template-default page page-id-2446 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home woocommerce-no-js left-sidebar">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/contact-form-7/includes/js/scripts3c21.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/mina.kenzap.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min1aae.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min1aae.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_1802fba66b39c18f7d4453a4036a70b2","fragment_name":"wc_fragments_1802fba66b39c18f7d4453a4036a70b2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min1aae.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/bootstrap.min51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/bootstrap-select.min51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/featherlight.min51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/bootstrap.offcanvas.min51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/bootstrap-responsive-tabs.min51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/owl.carousel.min51a2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","prev":"Prev","next":"Next","collapse":"collapse child menu","ajaxurl":"http:\/\/mina.kenzap.com\/wp-admin\/admin-ajax.php","noposts":"No records found","loadmore":"Load more"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/themes/mina/js/main51a2.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/imagesloaded.min55a0.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/masonry.mind617.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/jquery/jquery.masonry.minef70.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/select2/select2.full.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/underscore.min4511.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/wp-util.min5560.js?ver=5.0.4'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-crop.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-modal.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-jquery-form.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-fileupload.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/pickadate/picker2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/pickadate/picker.date2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/pickadate/picker.time2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/pickadate/legacy2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-raty.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-tipsy.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-scrollbar.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-functions.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-responsive.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-conditional.min2f20.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var um_scripts = {"nonce":"05c8a9adde"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-scripts.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-members.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-profile.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/ultimate-member/assets/js/um-account.min2f20.js'></script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-includes/js/wp-embed.min5560.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='%PUBLIC_URL%/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min274c.js'></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='http://mina.kenzap.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.3.2'></script>
+<![endif]-->
+<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script>		<script type="text/javascript">
+			jQuery( '#request' ).val( '' );
+		</script>
+
+</html>
