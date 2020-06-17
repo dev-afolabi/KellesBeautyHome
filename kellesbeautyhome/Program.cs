@@ -23,6 +23,12 @@ namespace kellesbeautyhome
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseKestrel( options => {
+                        options.Listen(IPAddress.Loopback, 5000);
+                        options.Listen(IPAddress.Loopback, 5001, listenOptions =>{
+                            listenOptions.UseHttps("localhost.pfx", "examination@28");
+                        });
+                    });
                 });
     }
 }

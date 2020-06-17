@@ -1,2 +1,4 @@
-# KellesBeautyHome
-Makeup artist website with appointment scheduler
+# Kelles Beauty Home
+
+An ASP.Net Core web api app.
+

@@ -29,9 +29,6 @@ class MobileNav extends Component
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3100">
                             <a href="about-us/index.html">About</a>
                         </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3102">
-                            <a href="blog/index.html">News</a>
-                        </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3608">
                             <a href="pricing-extended/index.html">Pricing</a>
                         </li>

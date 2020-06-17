@@ -4,7 +4,7 @@ class Services extends Component
 {
     render(){
         return (
-            
+            <div id="panel-2446-0-0-1" className="so-panel widget_mina_services_extended_widget" data-index="1">
                 <div className="so-widget-mina_services_extended_widget so-widget-mina_services_extended_widget-default-d75171398898">
                     <section className="our-treatment">
                         <div className="container">
@@ -90,6 +90,7 @@ class Services extends Component
                         </div>
                     </section>
                 </div>
+            </div>
         )
     }
 }

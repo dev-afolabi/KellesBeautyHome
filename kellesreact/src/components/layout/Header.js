@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Navbar from './Navbar';
 import MobileNav from './MobileNav';
 
@@ -9,7 +10,9 @@ const Header = () => {
                     <div className="row">
                         <div className="site-branding col-sm-2">
                             <h1 className="site-title">
-                                <a href='index.html' title='Mina' rel='home' className="logo-block"><img className="original_size" src='wp-content/uploads/2017/09/logo-white.svg' alt='Kelles'></img></a>
+                                <Link to='/' title='Mina' rel='home' className="logo-block">
+                                    <img className="original_size" src='wp-content/uploads/2017/09/logo-white.svg' alt='Kelles'></img>
+                                </Link>
                             </h1>
                         </div>
  
