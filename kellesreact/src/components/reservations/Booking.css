@@ -1,0 +1,391 @@
+/* /* --------------------------------------------------------------
+	BOOKING FORM
+--------------------------------------------------------------*/
+
+.booking-form .section-header{
+	background:#2e2e50;
+	padding:50px 15px;
+	text-align:center;
+	margin:0;
+}
+
+.booking-form  .section-header img{
+	border-radius:50%;
+	border:2px solid #828296;
+	display:inline-block;
+	margin:0 0 20px;
+}
+
+.booking-form .section-header h1{
+	font-size:24px;
+	color:#fff;
+	margin:0;
+	text-transform:uppercase;
+	opacity:.8;
+	letter-spacing:2px;
+}
+
+.booking-form  .section-content{
+	padding:70px 15px;
+	background:#fff
+}
+
+.booking-form  .booking-info,
+.booking-form  .booking-calendar{
+	padding:40px;
+	border:1px solid #c2c2c2;
+}
+
+.booking-form  .booking-info  h2,
+.booking-form  .booking-calendar  h2{
+	color:#323232;
+	font-size:18px;
+	text-transform:uppercase;
+	padding:0 0 25px;
+	margin:0 0 35px;
+	position:relative
+}
+
+.booking-form  .booking-info  h2:before,
+.booking-form  .booking-calendar  h2:before{
+	content: "";
+	display:block;
+	width:30px;
+	height:1px;
+	background:#c2c2c2;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.calendar{
+	overflow:hidden;
+	position:relative;
+}
+
+.calendar .nav-month{
+	display:none
+}
+
+.calendar .month-title{
+	text-align:center;
+	font-size:18px;
+	text-transform:uppercase;
+	color:#848484;
+	margin:0 0 20px;
+	padding:20px;
+	background:#f1f4f7;
+	border-radius:5px;
+	position:relative;
+}
+
+.calendar .month-title .month-prev{
+	position:absolute;
+	left:20px;
+	top:0;
+	bottom:0;
+	margin:auto;
+	height:25px;
+	width:25px;
+}
+
+.calendar .month-title .month-next i,
+.calendar .month-title .month-prev i{
+	height:25px;
+	width:25px;
+	line-height:25px;
+	font-size:25px;
+}
+
+.calendar .month-title .month-next{
+	position:absolute;
+	right:20px;
+	top:0;
+	bottom:0;
+	margin:auto;
+	height:25px;
+	width:25px;
+}
+
+
+.calendar .calendar-header ul{
+	margin:0 0 20px;
+	padding:20px 0;
+	background:#f1f4f7;
+	border-radius:5px;
+}
+
+.calendar .calendar-header ul li{
+	width:14.2857%;
+	text-align:center;
+	font-size:15px;
+	text-transform:uppercase;
+	color:#848484;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:bottom;
+	padding:0 5px;
+}
+
+.calendar .calendar-body ul{
+	margin:0;
+	padding:0;
+}
+
+.calendar .calendar-body ul li{
+	width:14.2857%;
+	text-align:center;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#303030;
+	font-family: "Montserrat";font-weight:400;
+	display:inline-block;
+	margin:0 0px 10px 0;
+	vertical-align:bottom;
+	padding:0 5px;
+}
+
+.calendar .calendar-footer ul li button,
+.calendar .calendar-body ul li button{
+	width:100%;
+	padding:15px;
+	text-align:center;
+	border:3px solid #f1f4f7;
+	border-radius:5px;
+	background:#fff;
+	font-size:15px;
+	line-height:15px;
+	transition:all .3s
+}
+
+.calendar .calendar-footer ul li button:hover,
+.calendar .calendar-body ul li button:hover{
+	border:3px solid #dec17b;
+	color:#dec17b
+}
+
+.calendar .calendar-footer ul li button.time-selected:hover,
+.calendar .calendar-body ul li button.selected:hover{
+	border:3px solid #dec17b;
+	color:#fff
+}
+
+.calendar .calendar-footer ul li .not-available,
+.calendar .calendar-body ul li .not-available{
+	background:#f1f4f7;
+	pointer-events:none;
+}
+
+.calendar .calendar-footer ul li .time-selected,
+.calendar .calendar-body ul li .selected{
+	background:#dec17b;
+	color:#fff;
+	border:3px solid #dec17b
+}
+
+.calendar .calendar-body{
+	margin:0 0 30px
+}
+
+.calendar .calendar-footer{
+	padding: 0 40px;
+	margin:0 0 50px;
+}
+
+.calendar .calendar-footer ul{
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+.calendar .calendar-footer ul li{
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+	padding:5px;
+	width:33.33333%
+}
+
+.calendar .calendar-label ul{
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+.calendar .calendar-label ul li{
+	font-size:15px;
+	color:#898989;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	padding:0 15px;
+	vertical-align:middle;
+	font-family: "Montserrat";font-weight:400;
+}
+
+.calendar .calendar-label ul li.available span{
+	width:38px;
+	height:23px;
+	border:3px solid #f1f4f7;
+	background:#fff;
+	display:inline-block;
+	margin:0 15px 0 0;
+	vertical-align:middle;
+	border-radius:5px;
+	color:#898989;
+}
+
+.calendar .calendar-label ul li.not-available span{
+	width:38px;
+	height:23px;
+	border:3px solid #f1f4f7;
+	background:#f1f4f7;
+	display:inline-block;
+	margin:0 15px 0 0;
+	vertical-align:middle;
+	border-radius:5px;
+	color:#898989;
+}
+
+.calendar .calendar-label ul li.selected span{
+	width:38px;
+	height:23px;
+	border:3px solid #dec17b;
+	background:#dec17b;
+	display:inline-block;
+	margin:0 15px 0 0;
+	vertical-align:middle;
+	border-radius:5px;
+	color:#fff;
+}
+
+.booking-form .booking-info h3{
+	color:#323232;
+	font-size:17px;
+	display:block;
+	text-transform:uppercase;
+	overflow:hidden;
+	margin:0 0 30px;
+}
+
+.booking-form .booking-info h3 strong{
+	color:#dec17b;
+	font-size:17px;
+	float:right;
+	font-family: "Montserrat";font-weight:700;
+}
+
+.booking-form .booking-info p{
+	color:#6c6c6c;
+	font-size:13px;
+	line-height:18px;
+	font-family: "Montserrat";font-weight:400;
+	margin:0 0 30px;
+}
+
+.booking-form .booking-info ul{
+	list-style:none;
+	padding:0;
+	margin:0 0 20px;
+}
+
+.booking-form .booking-info ul li{
+	color:#6c6c6c;
+	font-size:15px;
+	margin:0 0 20px;
+	font-family: "Montserrat";font-weight:400;
+}
+
+.booking-form .booking-info ul li:last-child{
+	margin:0;
+}
+
+.booking-form .booking-info ul li i{
+	color:#dec17b;
+	margin:0 20px 0 0;
+	font-size:15px;
+}
+
+.booking-form .booking-schedule{
+	padding:20px;
+	background:#f1f4f7;
+	border-right:1px solid #c2c2c2;
+	border-left:1px solid #c2c2c2;
+	border-bottom:1px solid #c2c2c2;
+	text-align:center;
+	margin:0 0 30px;
+}
+
+.booking-form .booking-schedule h3{
+	font-size:17px;
+	color:#4d4d4d;
+	text-transform:uppercase;
+	font-family: "Montserrat";font-weight:700;
+	margin:0 0 20px;
+}
+
+.booking-form .booking-schedule p{
+	font-size:17px;
+	color:#4d4d4d;
+	text-transform:uppercase;
+	font-family: "Montserrat";font-weight:400;
+	margin:0;
+}
+
+.booking-form .booking-schedule span{
+	font-family: "Montserrat";font-weight:400;
+}
+
+.booking-btn{
+	display:block;
+	border:3px solid #dec17b;
+	background:#fff;
+	font-size:22px;
+	width: 100%;
+	line-height:22px;
+	color:#dec17b;
+	text-transform:uppercase;
+	text-align:center;
+	padding:25px;
+	transition:all .2s
+}
+
+.booking-btn:hover{
+	background:#dec17b;
+	color:#fff;
+}
+
+.booking-confirmation{
+	padding:70px 15px 0;
+	background:#fff
+}
+
+.booking-confirmation .section-content{
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center
+}
+
+.booking-confirmation .section-content h1{
+	font-size:60px;
+	color:#1a1a38;
+	line-height:60px;
+	text-transform:uppercase;
+	margin:0 0 50px;
+}
+
+.booking-confirmation .section-content h1 span{
+	display:block;
+	font-size:28px;
+	color:#1a1a38;
+	font-family: "Montserrat";font-weight:400;
+	text-transform:none;
+}
+
+.booking-confirmation .section-content p{
+	font-size:16px;
+	line-height:28px;
+	color:#323232;
+	font-family: "Montserrat";font-weight:400;
+	margin:0 0 60px;
+} 

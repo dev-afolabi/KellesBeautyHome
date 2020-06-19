@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "./Slider";
 import Services from "./Services";
 import HowItWorks from "./HowItWorks";
 import Pricing from "./Pricing";
+import loadPackages from "../../store/thunks/thunk"
 import RegularContent from "./RegularContent";
 import Events from "../Events/Events";
+import { connect } from 'react-redux';
 
-const Home = () => {
+const Home = ({ packages, startLoadingPackages}) => {
+useEffect(() => {
+	startLoadingPackages();
+});
   return (
     <div>
 		<div id="content" className="site-content content-wrapper page-content">
@@ -18,7 +23,7 @@ const Home = () => {
 								<Slider />
 								<Services />
 								<HowItWorks />
-								<Pricing />
+								<Pricing packages={packages}/>
 								<RegularContent/>
 								<Events />
 
@@ -32,4 +37,16 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+
+const mapStateToProps = (state) => {
+	return {
+		packages: state.package.packages
+	}
+}
+const mapDispatchToProps = (dispatch) => {
+	return {
+		startLoadingPackages: () => dispatch(loadPackages()),
+	}
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Home);

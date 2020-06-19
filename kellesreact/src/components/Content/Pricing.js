@@ -1,7 +1,7 @@
 import React from 'react'
 import Package from './Package'
 
-const Pricing = () => {
+const Pricing = ({packages}) => {
     return (
         <div id="panel-2446-0-0-3" className="so-panel widget_mina_pricing_classNameic_widget" data-index="3">
             <div className="so-widget-mina_pricing_classNameic_widget so-widget-mina_pricing_classNameic_widget-default-d75171398898">
@@ -25,10 +25,13 @@ const Pricing = () => {
                                     <br />
                                     veniam, quis nostrud exerci tation.
                                 </p>
-                                <Package />
-                                <Package />
-                                <Package />
-                                <Package />
+                         
+                              { packages && packages.map(packaged => {
+                                  return (
+                                      <Package package={packaged} key={packaged.packageid}/>
+                                  )
+                              })}
+                       
                             </div>
                         </div>
                     </div>

@@ -7,6 +7,7 @@ import About from './components/Content/About';
 import Contact from './components/Content/Contact';
 import Gallery from './components/Content/Gallery';
 import Prices from './components/Content/Prices';
+import Bookings from './components/reservations/Bookings';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/beauty-gallery' component={Gallery} />
       <Route path='/contact-us'component={Contact} />
       <Route path='/prices' component={Prices} />
+      <Route path='/reservation' component={Bookings} />
       </Switch>
       <Footer />
      
