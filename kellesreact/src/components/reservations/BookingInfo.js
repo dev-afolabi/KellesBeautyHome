@@ -1,6 +1,8 @@
 import React from 'react'
+import moment from 'moment'
 
-const BookingInfo = () => {
+const BookingInfo = ({selectedDay}) => {
+    console.log(moment(':00 AM'))
     return (
         <div className="col-md-4">
             <div className="booking-info">
@@ -34,11 +36,16 @@ const BookingInfo = () => {
                     </div>
                 </div>
             </div>
+            { selectedDay ? 
             <div className="booking-schedule">
-                <h3>Reservation</h3>
-                <p>Please select date</p>
-            </div>
-            <a id="calendar_confirm" rel="nofollow" href="index850d.html?add-to-cart=3595" data-quantity="1" data-product_id="3595" data-product_sku="" data-cart="http://mina.kenzap.com/cart/" data-dof="Thursday" data-time="a" data-timestamp="45345534" className="booking-btn  hidden product_type_simple add_to_cart_button ajax_add_to_cart">NEXT</a>
+                <h3>{selectedDay.format("dddd")}</h3>
+                <p>{selectedDay.format("MMMM D, YYYY")} | 9:00 AM</p>
+            </div>:
+            <div className="booking-schedule">
+            <h3>Reservation</h3>
+            <p>Please select date</p>
+            </div>}
+            <a id="calendar_confirm" rel="nofollow" href="index850d.html?add-to-cart=3595" data-quantity="1" data-product_id="3595" data-product_sku="" data-cart="http://mina.kenzap.com/cart/" data-dof="Thursday" data-time="a" data-timestamp="45345534" class="booking-btn">NEXT</a>
         </div>
     )
 }

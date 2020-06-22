@@ -1,10 +1,20 @@
 import React, {Component} from 'react';
 import BookingInfo from './BookingInfo';
 import Calendars from './Calendar';
-import './Booking.css'
-//import Calendar from 'react-calendar';
+import './Booking.css';
 
 class Bookings extends Component{
+    state = {
+      selectedDay:null
+    }
+
+    updateState = (date) => {
+      this.setState({
+        ...this.state,
+      selectedDay: date
+    })
+    }
+
     render(){
         return (
           <div>
@@ -23,8 +33,8 @@ class Bookings extends Component{
               <div className="section-content">
                 <div className="container">
                   <div className="row">
-                    <Calendars />
-                    <BookingInfo />
+                    <Calendars updateState={this.updateState}/>
+                    <BookingInfo selectedDay={this.state.selectedDay}/>
                   </div>
                 </div>
               </div>

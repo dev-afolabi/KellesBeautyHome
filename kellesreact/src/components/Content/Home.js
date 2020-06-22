@@ -3,14 +3,15 @@ import Slider from "./Slider";
 import Services from "./Services";
 import HowItWorks from "./HowItWorks";
 import Pricing from "./Pricing";
-import loadPackages from "../../store/thunks/thunk"
+import {loadPackages, loadReservations} from "../../store/thunks/thunk"
 import RegularContent from "./RegularContent";
 import Events from "../Events/Events";
 import { connect } from 'react-redux';
 
-const Home = ({ packages, startLoadingPackages}) => {
+const Home = ({ packages, startLoadingPackages, startLoadingReservations}) => {
 useEffect(() => {
 	startLoadingPackages();
+	startLoadingReservations();
 });
   return (
     <div>
@@ -40,12 +41,14 @@ useEffect(() => {
 
 const mapStateToProps = (state) => {
 	return {
-		packages: state.package.packages
+		packages: state.package.packages,
+		reservations: state.reservation.reservations
 	}
 }
 const mapDispatchToProps = (dispatch) => {
 	return {
 		startLoadingPackages: () => dispatch(loadPackages()),
+		startLoadingReservations: () => dispatch(loadReservations()),
 	}
 }
 
