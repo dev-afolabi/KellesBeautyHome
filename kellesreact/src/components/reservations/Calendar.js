@@ -42,7 +42,6 @@ class Calendars extends Component {
   };
 
   onDayClick = (e,d) => {
-      e.preventDefault();
       this.props.updateState(this.state.dateObject.date(d))
   }
 
@@ -54,17 +53,17 @@ class Calendars extends Component {
 
     let blanks = [];
     for (let i = 0; i < this.firstDayOfMonth(); i++) {
-      blanks.push(<td className="inactive"></td>);
+      blanks.push(<td key={i} className="inactive"></td>);
     }
 
     let daysInMonth = [];
     for (let d = 1; d <= this.state.dateObject.daysInMonth(); d++) {
-      let currentDay = d == this.currentDay() ? "selected" : "";
+      let currentDay = d === this.currentDay() ? "selected" : "";
       daysInMonth.push(
         <td key={d} className={`${currentDay}`}>
-        <a href="" onClick={e => {this.onDayClick(e,d);}}>
+        <button onClick={e => {this.onDayClick(e,d);}}>
             {d}
-        </a>
+        </button>
         </td>
       );
     }
@@ -88,7 +87,7 @@ class Calendars extends Component {
     });
 
     let daysinmonth = rows.map((d, i) => {
-      return <tr>{d}</tr>;
+      return <tr key={i}>{d}</tr>;
     });
 
     return (

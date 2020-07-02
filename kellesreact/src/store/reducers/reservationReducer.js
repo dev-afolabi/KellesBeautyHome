@@ -1,3 +1,4 @@
+ 
 const reservationReducer = (state=[], action) => {
     switch(action.type){
         case 'LOAD_RESERVATIONS':

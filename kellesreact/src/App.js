@@ -8,6 +8,7 @@ import Contact from './components/Content/Contact';
 import Gallery from './components/Content/Gallery';
 import Prices from './components/Content/Prices';
 import Bookings from './components/reservations/Bookings';
+import StartBooking from './components/reservations/StartBooking';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <Route path='/beauty-gallery' component={Gallery} />
       <Route path='/contact-us'component={Contact} />
       <Route path='/prices' component={Prices} />
-      <Route path='/reservation' component={Bookings} />
+      <Route path='/make-reservation' component={Bookings} />
+      <Route path='/book-reservation' component={StartBooking} />
       </Switch>
       <Footer />
      

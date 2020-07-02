@@ -77,6 +77,8 @@ namespace kellesbeautyhome
 
             app.UseAuthorization();
 
+            app.UseHsts();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

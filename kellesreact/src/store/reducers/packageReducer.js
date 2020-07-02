@@ -1,10 +1,20 @@
+import { 
+    LOAD_PACKAGES_IN_PROGRESS, 
+    LOAD_PACKAGES_SUCCESS, 
+    LOAD_PACKAGES_FAILURE 
+} from "../actions/packageActions";
+
+
 const packageReducer = (state=[], action) => {
-    switch(action.type){
-        case 'LOAD_PACKAGES':
-            return {
-                ...state,
-                packages: action.payload
-            }
+    const {type, payload} = action;
+
+    switch(type){
+        case LOAD_PACKAGES_SUCCESS:{
+            const { packages } = payload;
+            return packages
+        }
+        case LOAD_PACKAGES_IN_PROGRESS:
+        case LOAD_PACKAGES_FAILURE:
         default:
             return state;
     }

@@ -24,8 +24,8 @@ namespace kellesbeautyhome
                 {
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseKestrel( options => {
-                        options.Listen(IPAddress.Loopback, 5000);
-                        options.Listen(IPAddress.Loopback, 5001, listenOptions =>{
+                        options.ListenLocalhost(5000);
+                        options.ListenLocalhost(5001, listenOptions =>{
                             listenOptions.UseHttps("localhost.pfx", "examination@28");
                         });
                     });
